@@ -9,7 +9,7 @@ var Downloader = function () {
   //Configure YoutubeMp3Downloader with your settings
   self.YD = new YoutubeMp3Downloader({
     ffmpegPath: "./lib/ffmpeg/bin/ffmpeg.exe", // FFmpeg binary location
-    outputPath: "./music", // Output file location (default: the home directory)
+    outputPath: "./public/music", // Output file location (default: the home directory)
     youtubeVideoQuality: "highestaudio", // Desired video quality (default: highestaudio)
     queueParallelism: 2, // Download parallelism (default: 1)
     progressTimeout: 2000, // Interval in ms for the progress reports (default: 1000)
@@ -54,7 +54,6 @@ function downloadYoutube(id, _callback = function () {}) {
     dl.getMP3({ videoId: id, name: id + ".mp3" }, function (err, res) {
       if (err) _callback(err);
       else {
-        console.log("Song was downloaded: " + res.file);
         _callback();
       }
     });

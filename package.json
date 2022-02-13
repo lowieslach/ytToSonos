@@ -19,6 +19,8 @@
   "dependencies": {
     "chalk": "^5.0.0",
     "chalk-animation": "^1.6.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
     "inquirer": "^8.2.0",
     "nanospinner": "^1.0.0",
     "sonos": "^1.14.1",
