@@ -11,6 +11,7 @@ const SONOS_ACTIOS = ["PLAY", "PAUSE", "STOP"];
 const start = async function () {
   //   console.clear();
   await welcome("Play youtube on sonos!");
+
   const task = await askTasks("What do you want to do?", TASK_OPTIONS);
 
   switch (task) {
