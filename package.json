@@ -1,0 +1,27 @@
+{
+  "name": "yttosonos",
+  "version": "1.0.0",
+  "description": "Play youtube videos on sonos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lowieslach/ytToSonos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lowieslach/ytToSonos/issues"
+  },
+  "homepage": "https://github.com/lowieslach/ytToSonos#readme",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "chalk-animation": "^1.6.0",
+    "inquirer": "^8.2.0",
+    "nanospinner": "^1.0.0",
+    "sonos": "^1.14.1",
+    "youtube-mp3-downloader": "^0.7.10"
+  }
+}
